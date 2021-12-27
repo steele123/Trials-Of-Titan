@@ -40,11 +40,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 0
       enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: b7d650a27a4974dd1990c410e1a921e8, type: 3}
-    totalSpriteSurfaceArea: 12608
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 28142a40dd705f8489ae7eb85a33a22e, type: 3}
@@ -442,5 +445,6 @@ SpriteAtlas:
   - DeepWater-4
   - MarketRugBottomLeft
   - SplotchyGrass-4
+  m_RenderDataMap: {}
   m_Tag: Tiles
   m_IsVariant: 0

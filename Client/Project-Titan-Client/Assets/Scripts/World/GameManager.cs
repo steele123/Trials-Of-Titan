@@ -227,9 +227,8 @@ public class GameManager : MonoBehaviour
 
             return;
         }
-        var rsa = Client.RsaEncrypt(accessToken);
-
-        var hello = new TnHello(rsa, characterToLoad, characterToCreate, worldId, worldKey);
+        
+        var hello = new TnHello(accessToken, characterToLoad, characterToCreate, worldId, worldKey);
         characterToCreate = 0;
         client.SendAsync(hello);
 

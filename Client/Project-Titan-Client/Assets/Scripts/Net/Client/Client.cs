@@ -17,18 +17,9 @@ using Utils.NET.Net.Udp.Reliability;
 
 public class Client : NetConnection<TnPacket>//UdpClient<TnPacket>
 {
-    private static Rsa rsa = new Rsa(NetConstants.Rsa_Public_Key);
-
     //private const string Game_Host = "3.17.35.212";
 
     private const string Game_Host = "127.0.0.1";
-
-    public static string RsaEncrypt(string value)
-    {
-        var bytes = Encoding.UTF8.GetBytes(value);
-        var encryptedBytes = rsa.Encrypt(bytes);
-        return Convert.ToBase64String(encryptedBytes);
-    }
 
     /// <summary>
     /// Ordered packet channel

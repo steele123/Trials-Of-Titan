@@ -10,14 +10,6 @@ using Utils.NET.Logging;
 
 public class LogBridge : MonoBehaviour
 {
-    private void Awake()
-    {
-        Log.WriteMethod = Write;
-
-        //Debug.Log(typeof(TileInfo).Assembly.FullName);
-        //Debug.Log(typeof(Vec2).Assembly.FullName);
-    }
-
     private static StringBuilder builder = new StringBuilder();
 
     private static void Write(object o)

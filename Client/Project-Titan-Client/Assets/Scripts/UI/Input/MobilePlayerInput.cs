@@ -265,21 +265,19 @@ public class MobilePlayerInput : MonoBehaviour
             }
         }
 
-        if (emotePressed)
+        if (!emotePressed) return;
+        if (emoteBtn.up)
         {
-            if (emoteBtn.up)
+            if (lastEmote != EmoteType.None)
             {
-                if (lastEmote != EmoteType.None)
-                {
-                    world.player.UseEmote(lastEmote);
-                }
-                emotePressed = false;
+                world.player.UseEmote(lastEmote);
             }
-            else if (emoteDownTime > 0.4f)
-            {
-                emotePressed = false;
-                emoteDial.Show(emoteBtn.transform.position, emoteBtn.touchId, EmoteSelected);
-            }
+            emotePressed = false;
+        }
+        else if (emoteDownTime > 0.4f)
+        {
+            emotePressed = false;
+            emoteDial.Show(emoteBtn.transform.position, emoteBtn.touchId, EmoteSelected);
         }
     }
 

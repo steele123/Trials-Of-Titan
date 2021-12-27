@@ -40,6 +40,8 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 0
       enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 395cf5dab0a7d453eba5615e82bbe7e2, type: 3}
@@ -50,8 +52,9 @@ SpriteAtlas:
     - {fileID: 102900000, guid: 5975003692979a94288a28e1c8bf65ca, type: 3}
     - {fileID: 102900000, guid: d592580b04537f6499ac82c0a5736705, type: 3}
     - {fileID: 102900000, guid: 3263c7deef436ac46b0aea40ffe88a36, type: 3}
-    totalSpriteSurfaceArea: 261104
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: f74e9100ffe885641ba1a01f5bd11736, type: 3}
@@ -3171,5 +3174,6 @@ SpriteAtlas:
   - MinisterPillar-4
   - MasterOfTheOrder-9
   - Raiding Shaman Orb
+  m_RenderDataMap: {}
   m_Tag: GameObjects
   m_IsVariant: 0

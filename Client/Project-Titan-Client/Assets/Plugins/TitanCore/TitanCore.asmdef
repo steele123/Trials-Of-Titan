@@ -1,0 +1,16 @@
+{
+    "name": "TitanCore",
+    "rootNamespace": "",
+    "references": [
+        "Utils.NET"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

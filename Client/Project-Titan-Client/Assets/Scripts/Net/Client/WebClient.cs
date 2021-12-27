@@ -87,7 +87,7 @@ public static class WebClient
     {
         SendRequest("v1/account/forgot", new Dictionary<string, string>()
         {
-            { "email", Client.RsaEncrypt(email) },
+            { "email", email },
         }, callback);
     }
 
@@ -95,8 +95,8 @@ public static class WebClient
     {
         SendRequest("v1/account/login", new Dictionary<string, string>()
         {
-            { "email", Client.RsaEncrypt(email) },
-            { "hash", Client.RsaEncrypt(hash) }
+            { "email", email },
+            { "hash", hash }
         }, callback);
     }
 
@@ -104,8 +104,8 @@ public static class WebClient
     {
         SendRequest("v1/account/register", new Dictionary<string, string>()
         {
-            { "email", Client.RsaEncrypt(email) },
-            { "hash", Client.RsaEncrypt(hash) }
+            { "email", email },
+            { "hash", hash }
         }, callback);
     }
 
@@ -113,7 +113,7 @@ public static class WebClient
     {
         SendRequest("v1/account/describe", new Dictionary<string, string>()
         {
-            { "token", Client.RsaEncrypt(accessToken) },
+            { "token", accessToken },
             { "version", NetConstants.Build_Version },
         }, callback);
     }
@@ -122,7 +122,7 @@ public static class WebClient
     {
         SendRequest("v1/account/purchaseslot", new Dictionary<string, string>()
         {
-            { "token", Client.RsaEncrypt(accessToken) },
+            { "token", accessToken },
         }, callback);
     }
 
@@ -130,12 +130,12 @@ public static class WebClient
     {
         var dict = new Dictionary<string, string>()
         {
-            { "token", Client.RsaEncrypt(accessToken) },
+            { "token", accessToken },
             { "fromName", fromName },
             { "toName", toName }
         };
         if (!string.IsNullOrEmpty(reservation))
-            dict.Add("reservation", Client.RsaEncrypt(reservation));
+            dict.Add("reservation", reservation);
 
         SendRequest("v1/account/changename", dict, callback);
     }

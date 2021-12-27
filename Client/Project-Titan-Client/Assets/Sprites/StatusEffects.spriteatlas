@@ -40,11 +40,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 0
       enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: af7d0800692abd945b63cab10996b35b, type: 3}
-    totalSpriteSurfaceArea: 7600
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 5f94af20d4e051c4a927ec6c80098cd7, type: 3}
@@ -86,5 +89,6 @@ SpriteAtlas:
   - Fortified
   - Charmed
   - VigorBonus
+  m_RenderDataMap: {}
   m_Tag: StatusEffects
   m_IsVariant: 0
